@@ -15,7 +15,6 @@ class ViewPagerAdapter(private val item: List<ViewData>): RecyclerView.Adapter<V
         fun  bind(item: ViewData){
             image.setImageResource(item.image)
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewPagerViewHolder {
@@ -25,7 +24,6 @@ class ViewPagerAdapter(private val item: List<ViewData>): RecyclerView.Adapter<V
     override fun onBindViewHolder(holder: ViewPagerViewHolder, position: Int) {
         val currentImage = item[position]
         holder.bind(currentImage)
-
     }
 
     override fun getItemCount(): Int {
